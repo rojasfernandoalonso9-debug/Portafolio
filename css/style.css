@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0d0d0d;
+    color: #e8e8e8;
+    line-height: 1.6;
+}
+
+.wrap {
+    max-width: 950px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-size: .7rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #1d1d1d;
+}
+
+/* =================================*********
+   HERO
+   ========================================= */
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    animation: fade 1s ease;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #222;
+    margin-bottom: 1.5rem;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-name {
+    font-family: 'Outfit';
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    font-weight: 800;
+}
+
+.hero-role {
+    font-size: .8rem;
+    color: #666;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.hero-desc {
+    max-width: 600px;
+    margin: 1.5rem auto;
+    color: #999;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #111;
+    border: 1px solid #222;
+    padding: 7px 15px;
+    border-radius: 50px;
+    color: #5fd4a0;
+    font-size: .8rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #5fd4a0;
+    animation: blink 2s infinite;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: .3s;
+    font-size: .85rem;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-main {
+    background: #5fd4a0;
+    color: black;
+    font-weight: 600;
+}
+
+.btn-outline {
+    border: 1px solid #333;
+    color: white;
+}
+
+/* =================================*********
+   ABOUT
+   ========================================= */
+
+.about {
+    line-height: 1.9;
+    color: #aaa;
+}
+
+/* =================================*********
+   TECH
+   ========================================= */
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech {
+    padding: 8px 12px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 8px;
+    font-size: .85rem;
+    color: #aaa;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.tech:hover {
+    transform: translateY(-4px);
+    background: #161616;
+    border-color: #333;
+    color: white;
+}
+
+/* =================================*********
+   PROYECTOS
+   ========================================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.card {
+    width: 100%;
+    background: #111;
+    border: 1px solid #1e1e1e;
+    padding: 1.4rem;
+    border-radius: 14px;
+    transition: .35s;
+}
+
+.card-center {
+    max-width: 480px;
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #333;
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 1px solid #222;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .6s;
+}
+
+.card:hover .project-image img {
+    transform: scale(1.08);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card-links {
+    display: flex;
+    gap: 6px;
+}
+
+.card-link {
+    font-size: .7rem;
+    color: #5fd4a0;
+    text-decoration: none;
+    border: 1px solid #1d3d2e;
+    padding: 4px 8px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.card-link:hover {
+    transform: translateY(-3px);
+    background: #163326;
+    border-color: #2e5a47;
+}
+
+.card-desc {
+    margin: 15px 0;
+    font-size: .85rem;
+    color: #888;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag {
+    background: #161616;
+    border: 1px solid #222;
+    padding: 4px 8px;
+    font-size: .7rem;
+    border-radius: 5px;
+    color: #777;
+}
+
+/* =================================*********
+   CERTIFICACIONES
+   ========================================= */
+
+.certs-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.cert {
+    background: #111;
+    border: 1px solid #1f1f1f;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.cert:hover {
+    transform: translateY(-4px);
+}
+
+.cert a {
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cert-icon {
+    width: 60px;
+    height: 41px;
+    background: #161616;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #222;
+}
+
+.cert-name {
+    font-weight: 600;
+    color: #ddd;
+}
+
+.cert-meta {
+    font-size: .75rem;
+    color: #666;
+}
+
+/* =================================*********
+   CONTACTO Y FOOTER
+   ========================================= */
+
+.contact-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.contact-item {
+    background: #111;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #1f1f1f;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.c-label {
+    font-size: .7rem;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.c-val {
+    color: #aaa;
+    font-size: .85rem;
+}
+
+@media (max-width: 700px) {
+    .contact-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    font-size: .8rem;
+    color: #444;
+}
+
+/* =================================*********
+   ANIMACIONES
+   ========================================= */
+
+@keyframes blink {
+    50% {
+        opacity: .2;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
